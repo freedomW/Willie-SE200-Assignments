@@ -3,7 +3,14 @@ function getNestedValue(obj: any, key: string): unknown {
     // Use type guards to check if obj is an object and has the key
     // Use type assertion if necessary
     let keys = key.split('.');
-    return keys.reduce((acc, k) => acc?.[k], obj);
+    for (let k of keys) {
+        if (obj === null || typeof obj !== 'object') {
+            return undefined;
+        }
+        obj = obj[k];
+    }
+    return obj;
+    //return keys.reduce((acc, k) => acc?.[k], obj);
 }
 
 // Test cases, do not modify

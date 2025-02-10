@@ -7,7 +7,7 @@ function processInput(input: any): any {
     // Check if input is a number
     switch (typeof input) {
         case 'number':
-            return input * input;
+            return input ** 2;
         case 'string':
             return input + input
         default:

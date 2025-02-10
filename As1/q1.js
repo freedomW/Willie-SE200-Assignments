@@ -5,7 +5,7 @@ function processInput(input) {
     // Check if input is a number
     switch (typeof input) {
         case 'number':
-            return input * input;
+            return Math.pow(input, 2);
         case 'string':
             return input + input;
         default:
