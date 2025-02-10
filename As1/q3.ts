@@ -10,10 +10,16 @@ type Rectangle = {
 };
 
 // Create a type Shape that contains the properties of either Circle or Rectangle
-
+type Shape = Circle | Rectangle;
 
 // Create a function calculateArea that takes a Shape as a parameter and returns its area
-
+function calculateArea(shape: Shape): number {
+    if (shape.kind === "circle") {
+        return Math.PI * shape.radius ** 2;
+    } else {
+        return shape.width * shape.height;
+    }
+}
 
 // Test cases, do not modify
 const circle: Shape = { kind: "circle", radius: 5 };
