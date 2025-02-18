@@ -1,0 +1,33 @@
+<div class="mt-12 flex w-full items-center">
+    <header class="flex w-full items-center justify-between bg-red-400 p-4">
+      <div class="text-3xl font-semibold text-[#f7fafc]">
+        <h1>ABC Bank</h1>
+      </div>
+      <div class="space-x-6 text-black xs:hidden">
+        <a href="#" class="hover:text-white">Personal Banking</a>
+        <a href="#" class="hover:text-white">Wealth Management</a>
+        <a href="#" class="hover:text-white">Corporate Banking</a>
+        <a href="#" class="hover:text-white">About Us</a>
+      </div>
+      <button class="hidden flex-1 justify-center focus:outline-none xs:flex" id="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="h-8 w-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+      <div>
+        <button class="rounded-lg bg-blue-500 px-4 py-2 text-[#f7fafc]">Sign Up</button>
+      </div>
+    </header>
+  </div>
+  <div class="hidden flex flex-col items-center space-y-4 bg-red-400 p-4 text-black nxs:hidden" id="mobile-menu">
+    <a href="#" class="hover:text-white">Personal Banking</a>
+    <a href="#" class="hover:text-white">Wealth Management</a>
+    <a href="#" class="hover:text-white">Corporate Banking</a>
+    <a href="#" class="hover:text-white">About Us</a>
+  </div>
+  <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+  
