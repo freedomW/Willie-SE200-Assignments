@@ -113,7 +113,7 @@ LIMIT 5 OFFSET 2;
 
 SELECT author, COUNT(*) AS book_count FROM books
 GROUP BY author
-hAVING COUNT(*) > 2;
+HAVING COUNT(*) > 2;
 
 SELECT publication_year, AVG(price) AS avg_price FROM books
 GROUP BY publication_year
