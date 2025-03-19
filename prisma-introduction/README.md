@@ -23,3 +23,16 @@ pnpm create next-app --example hello-world hello-world-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Setting up your own database
+
+1. Create a `.env` file in the root of your project and add your database connection string. For example:
+
+    ```env
+    DATABASE_URL=your-database-connection-string
+    ```
+
+2. Replace `your-database-connection-string` with the connection string for your own database.
+
+3. Update your application code to use the database connection from the `.env` file.
+
+For more information, refer to the [Next.js Environment Variables documentation](https://nextjs.org/docs/basic-features/environment-variables).
